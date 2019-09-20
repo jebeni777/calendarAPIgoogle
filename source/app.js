@@ -1,31 +1,31 @@
-import React from 'react'
-import { render } from 'react-dom'
-import moment from 'moment'
+import React from 'react';
+import { render } from 'react-dom';
+import moment from 'moment';
 
 import BigCalendar from 'react-big-calendar'
-BigCalendar.momentLocalizer(moment)
+BigCalendar.momentLocalizer(moment);
 
-import { getEvents } from './gcal'
+import { getEvents } from './gcal';
 
 require('react-big-calendar/lib/css/react-big-calendar.css')
 
 class App extends React.Component {
-  constructor () {
+  constructor() {
     super()
     this.state = {
       events: []
     }
   }
-  componentDidMount () {
+  componentDidMount() {
     getEvents((events) => {
-      this.setState({events})
+      this.setState({ events })
     })
   }
-  render () {
+  render() {
     return (
       // React Components in JSX look like HTML tags
       <BigCalendar
-        style={{height: '420px'}}
+        style={{ height: '420px' }}
         events={this.state.events}
       />
     )
