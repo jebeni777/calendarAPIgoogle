@@ -1,0 +1,42 @@
+{
+  "name": "calendar",
+  "version": "1.0.0",
+  "description": "Google Calendar API Project",
+  "main": "index.js",
+  "scripts": {
+    "serve": "NODE_ENV=development webpack-dev-server --open --config webpack.config.js",
+    "build": "NODE_ENV=production webpack -p --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/petlgunjr/calendarAPIgoogle.git"
+  },
+  "keywords": [
+    "calendar",
+    "schedule",
+    "appointment"
+  ],
+  "author": "Peter L Gunter Jr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petlgunjr/calendarAPIgoogle/issues"
+  },
+  "homepage": "https://github.com/petlgunjr/calendarAPIgoogle#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9"
+  },
+  "babel": {
+    "presets": [
+      "react",
+      "es2015"
+    ]
+  }
+}

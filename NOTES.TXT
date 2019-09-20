@@ -1,0 +1,9 @@
+Through tutorial
+
+Add features
+	Add event
+	delete event
+	edit event
+
+	Extra Credit:
+		Querying: Next free day w/ no events scheduled
