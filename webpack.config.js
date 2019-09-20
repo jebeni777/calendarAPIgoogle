@@ -14,12 +14,22 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        exclude: /(node_modules|bower_components)/,
-        loader: 'babel-loader',
-        query: {
-          presets: ['es2015', 'react']
-        }
-      }
+        use: ['babel-loader'],
+        exclude: [/node_modules/],
+      },
+      {
+        test: /\.s?css$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true
+            },
+          },
+          'sass-loader',
+        ],
+      },
     ]
   }
 }

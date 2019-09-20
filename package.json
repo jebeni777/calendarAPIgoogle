@@ -28,8 +28,13 @@
     "babel-loader": "^7.1.5",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "css-loader": "^3.2.0",
+    "moment": "^2.24.0",
     "react": "^16.9.0",
+    "react-big-calendar": "^0.22.1",
     "react-dom": "^16.9.0",
+    "style-loader": "^1.0.0",
+    "superagent": "^5.1.0",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.9"
   },
@@ -38,5 +43,11 @@
       "react",
       "es2015"
     ]
+  },
+  "dependencies": {
+    "http-server": "^0.11.1",
+    "node-sass": "^4.12.0",
+    "sass": "^1.22.12",
+    "sass-loader": "^8.0.0"
   }
 }
